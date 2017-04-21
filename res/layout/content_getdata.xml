@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_getdata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aasthu.verbroseapp.getdata"
+    tools:showIn="@layout/activity_getdata"
+    android:background="#e5e5e5"
+    >
+    <!-- app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/linearLayout"
+        android:elevation="14dp"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@android:color/background_light"
+            app:hintTextAppearance="@color/white"
+            android:id="@+id/ttitle"
+            >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/background_light"
+            android:ems="10"
+            android:id="@+id/title"
+
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Title"
+            android:textColorLink="@android:color/white"
+            app:backgroundTint="#000000"
+            android:textCursorDrawable="@drawable/cursor_color"/></android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:background="@android:color/background_light"
+       >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/tdescription"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@color/white"
+            >
+
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/description"
+            android:hint="Description"
+            app:backgroundTint="@android:color/darker_gray"
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+                android:scrollbars="vertical"
+                android:maxHeight="120dp"
+            android:textCursorDrawable="@drawable/cursor_color"/>
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text="Attachments"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/attach"
+            android:gravity="bottom"
+            android:textSize="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignStart="@+id/linearLayout2">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_gallery"
+                android:id="@+id/img"
+                android:layout_weight="43.66"
+                android:background="#e5e5e5"
+                android:layout_marginLeft="15dp"
+                android:padding="1dp"
+                android:visibility="invisible"
+
+               />
+
+            <TextView
+                android:text="  imagepath"
+                android:layout_width="160dp"
+               android:background="#e5e5e5"
+                android:layout_height="match_parent"
+                android:id="@+id/imagepath"
+                android:layout_weight="43.66"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:paddingBottom="22dp"
+                android:paddingTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:visibility="invisible"
+
+
+            />
+
+
+            <TextView
+                android:text="imagepath"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imagesize"
+                android:layout_weight="43.66"
+                android:textSize="10dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="3dp"
+                android:textColor="@android:color/darker_gray"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                android:background="#e5e5e5"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/btn_dialog"
+                android:id="@+id/cancle"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="15dp"
+                android:padding="2dp"
+                android:background="#e5e5e5"
+                android:layout_weight="8"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
